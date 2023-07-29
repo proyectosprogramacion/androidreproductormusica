@@ -1,0 +1,47 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:background="@color/purple_700"
+    >
+
+    <ImageView
+        android:id="@+id/icono"
+        android:layout_width="?android:attr/listPreferredItemHeight"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/shape_item"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/ic_baseline_music_note_24"/>
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/icono"
+        android:layout_alignParentTop="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:text="Nombre de canciones"
+        android:layout_toEndOf="@id/icono"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:padding="6dp"
+        android:textStyle="bold"
+        android:scrollHorizontally="true"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/subtitulo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/carpetasd"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@id/icono"
+        android:layout_below="@id/titulo"
+        android:layout_toEndOf="@id/icono"
+        android:textSize="10dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"/>
+</RelativeLayout>

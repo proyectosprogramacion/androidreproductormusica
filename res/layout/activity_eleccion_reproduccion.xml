@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/portada"
+    tools:context=".EleccionReproduccion">
+
+
+
+  <Button
+      android:id="@+id/btReproduccionListView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:layout_above="@id/btReproduccionRaw"
+      android:layout_marginTop="20dp"
+      android:background="@color/purple_700"
+      android:textColor="@color/black"
+      android:text="@string/reproListView"
+      android:textAlignment="center"
+      android:textSize="20dp"/>
+
+
+  <Button
+      android:id="@+id/btReproduccionRaw"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:layout_marginTop="20dp"
+      android:background="@color/purple_700"
+      android:text="@string/reproducirRaw"
+      android:textAlignment="center"
+      android:textColor="@color/black"
+      android:textSize="20dp"
+      tools:ignore="TextContrastCheck" />
+
+  <Button
+      android:id="@+id/btGrabacion"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:layout_below="@id/btReproduccionRaw"
+      android:layout_marginTop="20dp"
+      android:background="@color/purple_700"
+      android:text="@string/grabar"
+      android:textAlignment="center"
+      android:textColor="@color/black"
+      android:textSize="20dp"
+      tools:ignore="TextContrastCheck" />
+
+
+</RelativeLayout>

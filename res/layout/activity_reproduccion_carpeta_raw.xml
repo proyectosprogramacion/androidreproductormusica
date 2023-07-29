@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ReproduccionCarpetaRaw"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/ivImagenesAudio"
+        android:layout_width="match_parent"
+        android:layout_height="469dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/purple_700"
+        app:srcCompat="@drawable/portada1" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_marginTop="60dp">
+
+        <Button
+            android:id="@+id/btPlay"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:onClick="playPause"
+            android:background="@drawable/reproducir"
+            />
+
+        <Button
+            android:id="@+id/btStop"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:onClick="Stop"
+            android:background="@drawable/detener"
+            />
+        <Button
+            android:id="@+id/btRepetir"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:onClick="Repetir"
+            android:background="@drawable/repetir"
+            />
+        <Button
+            android:id="@+id/btAnterior"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:onClick="Anterior"
+            android:background="@drawable/anterior"
+            />
+        <Button
+            android:id="@+id/btPosterior"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:onClick="Siguiente"
+            android:background="@drawable/siguiente"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
